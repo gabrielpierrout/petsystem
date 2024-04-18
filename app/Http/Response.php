@@ -59,7 +59,7 @@ class Response {
     }
 
     /**
-     * Método responsável por enviar os headrs para o navegador
+     * Método responsável por enviar os headers para o navegador
      */
     private function sendHeaders(){
         //STATUS

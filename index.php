@@ -3,15 +3,19 @@
 require __DIR__.'/vendor/autoload.php';
 
 use \App\Http\Router;
-use \App\Controller\Pages\Home;
+use \App\Utils\View;
 
 define('URL', 'http://localhost/petsystem');
 
+// Define o valor padrão das variáveis
+View::init([
+    'URL' => URL
+]);
+
+// Inicia o router
 $obRouter = new Router(URL);
-echo "<pre>";
-print_r($obRouter);
-echo "</pre>";
 
-exit;
+include __DIR__.'/routes/pages.php';
 
-echo Home::getHome();
+// Imprime o Response da Rota
+$obRouter->run()->sendResponse();
