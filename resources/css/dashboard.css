@@ -1,0 +1,98 @@
+:root {
+
+/* Cores */
+--dark-blue: #071952;
+--light-blue: #088395;
+--secondary-light-blue: #35A29F;
+--yellow: #F2F7A1;
+--hover-blue: #86C5CE;
+
+--success-color: #11834E;
+--danger-color: #B90E1E;
+--neutral-color: #656565;
+
+/* Fontes */
+
+--title-font: 'Lato', sans-serif;
+--body-font: 'DM Sans', sans-serif;
+
+}
+
+h4 {
+    font-family: var(--title-font);
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+
+/* Sidebar */
+   
+#side-nav{
+    background: #fff;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    border-right: 1px solid rgba(183, 183, 183, 0.11);
+}
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* .sidebar li.active{
+    background: #eee;
+    border-radius: 8px;
+} */
+
+/* .sidebar li.active a, .sidebar li.active a:hover {
+    color: #000;
+} */
+
+.sidebar li a{
+    color: var(--dark-blue);
+}
+
+.site-title {
+    color: var(--dark-blue);
+}
+
+.menu-title {
+    border-bottom: 1px solid rgba(183, 183, 183, 0.11);
+}
+
+/* Header */
+
+.navbar {
+    height: 100px;
+}
+
+.header-box {
+    height: 100px;
+}
+
+.bg-darkblue {
+    background-color: var(--dark-blue);
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+}
+
+div .notification-box {
+    background-color: #122B77;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.notification-icon {
+    color: #fff;
+    font-size: 18px;
+}
