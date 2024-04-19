@@ -175,14 +175,13 @@ class Router
                     // Retorno dos parâmetros da Rota
                     return $methods[$httpMethod];
                 }
-
                 // Método não permitido definido
                 throw new Exception("Método não permitido", 405);
             }
-
-            // URL não encontrada
-            throw new Exception("URL não encontrada", 404);
         }
+
+        // URL não encontrada
+        throw new Exception("URL não encontrada", 404);
     }
 
     /**
