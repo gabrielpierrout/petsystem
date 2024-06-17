@@ -16,8 +16,14 @@ $obRouter->get('/sobre',[
     }
 ]);
 
-$obRouter->get('/pagina/{idPagina}/{acao}',[
-    function($idPagina,$acao){
-        return new Response(200,'Página ' .$idPagina.' - '.$acao);
+$obRouter->get('/costumers',[
+    function(){
+        return new Response(200,Pages\Costumers::getCostumers());
+    }
+]);
+
+$obRouter->get('/pets',[
+    function(){
+        return new Response(200,Pages\Pets::getPets());
     }
 ]);
