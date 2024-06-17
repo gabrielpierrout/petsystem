@@ -20,7 +20,7 @@ class Home extends Page{
         ]);
 
         // Retorna a view da página
-        return parent::getPage('PetSystem', $content);
+        return parent::getPage('PetSystem - Painel', $content);
     }
     
 }
