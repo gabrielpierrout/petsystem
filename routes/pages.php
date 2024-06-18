@@ -27,3 +27,9 @@ $obRouter->get('/pets',[
         return new Response(200,Pages\Pets::getPets());
     }
 ]);
+
+$obRouter->get('/add-pet',[
+    function(){
+        return new Response(200,Pages\AddPet::getAddPet());
+    }
+]);
