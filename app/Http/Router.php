@@ -161,10 +161,9 @@ class Router
         // Valida as Rotas
         foreach ($this->routes as $patternRoute => $methods) {
             // Verifica se a URI corresponde com o padrão
-            if (preg_match($patternRoute, $uri,$matches)) {
+            if (preg_match($patternRoute, $uri,$matches)){
                 // Verifica o método
                 if (isset($methods[$httpMethod])) {
-
                     unset($matches[0]);
 
                     // Variaveis Processadas

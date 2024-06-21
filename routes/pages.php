@@ -33,3 +33,12 @@ $obRouter->get('/add-pet',[
         return new Response(200,Pages\AddPet::getAddPet());
     }
 ]);
+
+$obRouter->post('/add-pet',[
+    function($request){
+        echo "<pre>";
+        print_r($request);
+        echo "</pre>";
+        return new Response(200,Pages\AddPet::insertPet($request));
+    }
+]);
